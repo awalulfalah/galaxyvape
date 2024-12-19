@@ -1,0 +1,119 @@
+body {
+    background-color: #0a0a2e;
+    color: #ffffff;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.card {
+    background-color: rgba(25, 25, 65, 0.8);
+    border: 1px solid rgba(138, 130, 238, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(103, 96, 194, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(103, 96, 194, 0.3);
+}
+
+.card-body {
+    color: #ffffff;
+}
+
+.hero-section {
+    background: linear-gradient(45deg, #1a1a1a, #4a148c);
+    padding: 100px 0;
+    margin-bottom: 40px;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #0a0a2e, #1a1a4f) !important;
+    border-bottom: 1px solid rgba(138, 130, 238, 0.2);
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #4a4ad8, #6e6ef2);
+    border: none;
+    box-shadow: 0 4px 15px rgba(74, 74, 216, 0.3);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #3a3ac8, #5e5ee2);
+    box-shadow: 0 4px 20px rgba(74, 74, 216, 0.4);
+}
+
+.btn-outline-primary {
+    border-color: #4a4ad8;
+    color: #4a4ad8;
+}
+
+.btn-outline-primary:hover {
+    background: linear-gradient(45deg, #4a4ad8, #6e6ef2);
+    border-color: transparent;
+}
+
+.table {
+    color: #ffffff;
+}
+
+.table-sm td, .table-sm th {
+    background-color: transparent;
+    border-color: rgba(138, 130, 238, 0.2);
+}
+
+.badge {
+    padding: 0.5em 1em;
+}
+
+.pagination .page-link {
+    background-color: rgba(25, 25, 65, 0.8);
+    border-color: rgba(138, 130, 238, 0.2);
+    color: #ffffff;
+}
+
+.pagination .page-item.active .page-link {
+    background: linear-gradient(45deg, #4a4ad8, #6e6ef2);
+    border-color: transparent;
+}
+
+.form-control, .form-select {
+    background-color: rgba(20, 20, 50, 0.8);
+    border: 1px solid rgba(138, 130, 238, 0.2);
+    color: #ffffff;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: rgba(30, 30, 70, 0.8);
+    border-color: rgba(138, 130, 238, 0.4);
+    color: #ffffff;
+    box-shadow: 0 0 0 0.25rem rgba(74, 74, 216, 0.25);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a2e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4a4ad8;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3a3ac8;
+} 

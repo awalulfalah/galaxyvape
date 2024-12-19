@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    
+    # Allow direct access to uploads directory
+    RewriteRule ^uploads/ - [L]
+    
+    # Jika file/directory tidak ada, lanjutkan ke rules berikutnya
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    
+    # Redirect semua request ke index.php
+    RewriteRule ^(.*)$ index.php [L,QSA]
+</IfModule> 
